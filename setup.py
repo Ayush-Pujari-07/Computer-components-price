@@ -9,6 +9,7 @@ HYPEN_E_DOT = '-e .'
 AUTHOR = os.environ.get('AUTHOR')
 AUTHOR_EMAIL = os.environ.get('AUTHOR_EMAIL')
 
+
 def get_requirements(file_path: str) -> List[str]:
     '''
     This function retrieves the requirements from a file and returns them as a list.
@@ -21,6 +22,7 @@ def get_requirements(file_path: str) -> List[str]:
         if HYPEN_E_DOT in requirements:
             requirements.remove(HYPEN_E_DOT)
     return requirements
+
 
 setup(
     name='component_scrapers',
